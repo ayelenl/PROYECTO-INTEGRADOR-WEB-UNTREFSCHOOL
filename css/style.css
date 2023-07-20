@@ -12,6 +12,7 @@ body {
     background-size: cover;
     height: 40vh;
 }
+
 h1 {
     color: #fc7300;
     font-family: 'Belanosima', sans-serif;
@@ -21,8 +22,8 @@ h1 {
 }
 
 nav {
-font-family: 'Poppins', sans-serif;
-font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
 }
 
 a {
@@ -33,20 +34,68 @@ a {
     --bs-bg-opacity: 1;
     background-color: #1f8a70 !important;
 }
+
 .container {
     margin: 2%;
     display: flex;
     flex-flow: column wrap;
 }
-.div-seccion1 {
-    max-width: 80%;
-    min-height: 60vh;
+
+h2,
+h3 {
+    color: #eff5f5;
+    font-family:'Belanosima', sans-serif;;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+.parrafo {
+    grid-area: parrafo;
+    color: #181823;
+    text-align: center;
+    padding-top: 2%;
+}
+.container-seccion1 {
+    max-width: 98%;
+    min-height: 40vh;
     display: grid;
     margin: auto;
-    grid-template-columns: 3fr minmax(80px, 1fr);
-    grid-template-rows: 50px 1fr;
-    grid-template-areas:
-        "h2 h2"
-        "img p"
-      
+    padding: 2%;
+    background-color: #fc7300;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulo titulo""imagen parrafo"; 
+}
+
+.container-seccion2 {
+    max-width: 98%;
+    min-height: 40vh;
+    display: grid;
+    margin: auto;
+    padding: 2%;
+    background-color: #1f8a70;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulo titulo""parrafo imagen";
+}
+
+.container-seccion3 {
+    max-width: 98%;
+    min-height: 40vh;
+    display: flex;
+    margin: auto;
+}
+
+@media screen and (max-width: 760px) {
+    .container-seccion1,
+    .container-seccion2,
+    .container-seccion3 {
+        display:block
+    }
+   
 }
