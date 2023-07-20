@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    background-color: #00425a;
+    font-family:'Poppins', sans-serif;
+}
+
+.portada {
+    background-image:url(/img/portada.jpg);
+    background-size: cover;
+    height: 40vh;
+}
+h1 {
+    color: #fc7300;
+    font-family: 'Belanosima', sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 5px #181823;
+    font-size: 30px;
+}
+
+nav {
+font-family: 'Poppins', sans-serif;
+font-size: medium;
+}
+
+a {
+    color: #181823 !important;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #1f8a70 !important;
+}
+.container {
+    margin: 2%;
+    display: flex;
+    flex-flow: column wrap;
+}
+.div-seccion1 {
+    max-width: 80%;
+    min-height: 60vh;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 3fr minmax(80px, 1fr);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas:
+        "h2 h2"
+        "img p"
+      
+}
