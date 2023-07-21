@@ -1,1 +1,2 @@
 # PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL
+la portada lleva una imagen, agregada en la hoja de estilo del css. al abrirlo con live server se visualiza correctamente, pero en la pagina creada en github no se visualiza. 
