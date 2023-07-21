@@ -91,11 +91,31 @@ h3 {
     margin: auto;
 }
 
+footer {
+    margin: auto;
+    background-color: #fc7300;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 @media screen and (max-width: 760px) {
     .container-seccion1,
     .container-seccion2,
     .container-seccion3 {
         display:block
     }
-   
+   .footer-container {
+    flex-direction: column;
+   }
+}
+
+.body-form {
+    margin:auto;
+    color: #eff5f5;
+}
+button {
+    
 }
