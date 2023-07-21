@@ -8,9 +8,10 @@ body {
 }
 
 .portada {
+    padding: 13%;
     background-image:url(/img/portada.jpg);
-    background-size: cover;
-    height: 40vh;
+    background-size: 100%;
+
 }
 
 h1 {
